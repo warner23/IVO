@@ -1,0 +1,117 @@
+[28-Aug-2019 20:16:11 UTC] PHP Parse error:  syntax error, unexpected '$res' (T_VARIABLE) in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIDashboard.php on line 361
+[28-Aug-2019 20:19:26 UTC] PHP Parse error:  syntax error, unexpected '$res' (T_VARIABLE) in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIDashboard.php on line 362
+[28-Aug-2019 21:02:53 UTC] PHP Parse error:  syntax error, unexpected '$res' (T_VARIABLE) in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIDashboard.php on line 362
+[28-Aug-2019 23:20:58 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIDashboard.php on line 364
+[28-Aug-2019 23:21:24 UTC] PHP Parse error:  syntax error, unexpected '$total_view' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIDashboard.php on line 368
+[28-Aug-2019 23:28:29 UTC] PHP Parse error:  syntax error, unexpected '$res' (T_VARIABLE) in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIDashboard.php on line 364
+[28-Aug-2019 23:30:35 UTC] PHP Parse error:  syntax error, unexpected '$res' (T_VARIABLE) in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIDashboard.php on line 364
+[28-Aug-2019 23:30:41 UTC] PHP Parse error:  syntax error, unexpected '$page' (T_VARIABLE) in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIDashboard.php on line 365
+[28-Aug-2019 23:45:13 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[28-Aug-2019 23:45:13 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[23-Sep-2019 23:01:28 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[23-Sep-2019 23:01:28 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[16-Oct-2019 05:30:46 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[16-Oct-2019 05:30:46 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[08-Nov-2019 17:58:51 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[08-Nov-2019 17:58:51 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[05-Dec-2019 22:49:02 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[05-Dec-2019 22:49:02 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[08-Dec-2019 05:42:40 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 3
+[08-Dec-2019 05:42:40 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 3
+[08-Dec-2019 05:42:40 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 6
+[08-Dec-2019 05:42:40 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 6
+[08-Dec-2019 05:42:44 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 3
+[08-Dec-2019 05:42:44 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 3
+[08-Dec-2019 05:42:44 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 6
+[08-Dec-2019 05:42:44 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 6
+[08-Dec-2019 05:42:58 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 3
+[08-Dec-2019 05:42:58 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 3
+[08-Dec-2019 05:42:58 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 6
+[08-Dec-2019 05:42:58 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 6
+[08-Dec-2019 05:49:45 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 3
+[08-Dec-2019 05:49:45 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 3
+[08-Dec-2019 05:49:45 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 6
+[08-Dec-2019 05:49:45 UTC] PHP Notice:  Undefined variable: WI in /home/warner23/public_html/IVO/WIAdmin/WIInc/media.php on line 6
+[08-Dec-2019 20:16:03 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[08-Dec-2019 20:16:03 UTC] PHP Notice:  Undefined index: mod_status in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 321
+[13-Dec-2019 06:34:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WIPage::Page_Info() in /home/warner23/public_html/IVO/WIAdmin/WIInc/pageoptions.php:361
+Stack trace:
+#0 /home/warner23/public_html/IVO/WIAdmin/WIPageOptions.php(9): include_once()
+#1 {main}
+  thrown in /home/warner23/public_html/IVO/WIAdmin/WIInc/pageoptions.php on line 361
+[13-Dec-2019 06:34:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WIPage::Page_Info() in /home/warner23/public_html/IVO/WIAdmin/WIInc/pageoptions.php:361
+Stack trace:
+#0 /home/warner23/public_html/IVO/WIAdmin/WIPageOptions.php(9): include_once()
+#1 {main}
+  thrown in /home/warner23/public_html/IVO/WIAdmin/WIInc/pageoptions.php on line 361
+[13-Dec-2019 06:34:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WIPage::Page_Info() in /home/warner23/public_html/IVO/WIAdmin/WIInc/pageoptions.php:361
+Stack trace:
+#0 /home/warner23/public_html/IVO/WIAdmin/WIPageOptions.php(9): include_once()
+#1 {main}
+  thrown in /home/warner23/public_html/IVO/WIAdmin/WIInc/pageoptions.php on line 361
+[13-Dec-2019 06:35:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WIPage::Page_Info() in /home/warner23/public_html/IVO/WIAdmin/WIInc/pageoptions.php:361
+Stack trace:
+#0 /home/warner23/public_html/IVO/WIAdmin/WIPageOptions.php(9): include_once()
+#1 {main}
+  thrown in /home/warner23/public_html/IVO/WIAdmin/WIInc/pageoptions.php on line 361
+[24-Dec-2019 21:15:28 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIPage.php on line 690
+[24-Dec-2019 21:17:16 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIPage.php on line 690
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[31-Dec-2019 10:20:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'warner23_testIVO.wi_site' doesn't exist in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WILib.php on line 50
+[01-Jan-2020 12:51:37 UTC] PHP Notice:  Undefined index: Installed in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WIPlugin.php on line 113
+[01-Jan-2020 12:59:22 UTC] PHP Notice:  Undefined index: Installed in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WIPlugin.php on line 113
+[01-Jan-2020 13:02:41 UTC] PHP Notice:  Undefined index: Installed in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WIPlugin.php on line 113
+[01-Jan-2020 23:01:26 UTC] PHP Warning:  include_once(WIInc/WIBlog_Options.php): failed to open stream: No such file or directory in /home/warner23/public_html/testing_IVO/WIAdmin/WIBlog_Options.php on line 10
+[01-Jan-2020 23:01:26 UTC] PHP Warning:  include_once(): Failed opening 'WIInc/WIBlog_Options.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/warner23/public_html/testing_IVO/WIAdmin/WIBlog_Options.php on line 10
+[02-Jan-2020 00:26:08 UTC] PHP Notice:  Undefined index: Installed in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WIPlugin.php on line 113
+[02-Jan-2020 00:29:47 UTC] PHP Notice:  Undefined index: Installed in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WIPlugin.php on line 113
+[02-Jan-2020 00:32:13 UTC] PHP Notice:  Undefined index: Installed in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WIPlugin.php on line 113
+[02-Jan-2020 00:32:23 UTC] PHP Warning:  include_once(WIInc/WIBlog_Options.php): failed to open stream: No such file or directory in /home/warner23/public_html/testing_IVO/WIAdmin/WIBlog_Options.php on line 10
+[02-Jan-2020 00:32:23 UTC] PHP Warning:  include_once(): Failed opening 'WIInc/WIBlog_Options.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/warner23/public_html/testing_IVO/WIAdmin/WIBlog_Options.php on line 10
+[04-Jan-2020 12:50:12 UTC] PHP Notice:  Undefined index: Installed in /home/warner23/public_html/testing_IVO/WIAdmin/WICore/WIClass/WIPlugin.php on line 113
+[04-Jan-2020 12:51:40 UTC] PHP Warning:  include_once(WIInc/WIBlog_Options.php): failed to open stream: No such file or directory in /home/warner23/public_html/testing_IVO/WIAdmin/WIBlog_Options.php on line 10
+[04-Jan-2020 12:51:40 UTC] PHP Warning:  include_once(): Failed opening 'WIInc/WIBlog_Options.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/warner23/public_html/testing_IVO/WIAdmin/WIBlog_Options.php on line 10

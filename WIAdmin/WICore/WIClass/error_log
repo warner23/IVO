@@ -1,0 +1,18 @@
+[25-Dec-2019 14:04:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WIModules::uninstall_ele() in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIAjax.php:249
+Stack trace:
+#0 {main}
+  thrown in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIAjax.php on line 249
+[25-Dec-2019 14:05:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WIModules::uninstall_ele() in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIAjax.php:249
+Stack trace:
+#0 {main}
+  thrown in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIAjax.php on line 249
+[25-Dec-2019 14:07:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WIModules::uninstall_ele() in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIAjax.php:249
+Stack trace:
+#0 {main}
+  thrown in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIAjax.php on line 249
+[25-Dec-2019 15:05:40 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function WIModules::unistall_Element(), 1 passed in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIAjax.php on line 249 and exactly 2 expected in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php:578
+Stack trace:
+#0 /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIAjax.php(249): WIModules->unistall_Element('Grid')
+#1 {main}
+  thrown in /home/warner23/public_html/IVO/WIAdmin/WICore/WIClass/WIModules.php on line 578
+[25-Dec-2019 15:11:08 UTC] PHP Notice:  Undefined variable: element in /home/warner23/public_html/IVO/WIAdmin/WIModule/elements/Grid/Grid.php on line 139
