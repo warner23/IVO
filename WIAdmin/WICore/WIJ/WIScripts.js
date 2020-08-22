@@ -403,6 +403,7 @@ WIScript.configurationElm = function(){
 
 WIScript.removeElm = function(){
     $(".demo").delegate(".remove", "click", function(e) {
+        console.log("removing");
         e.preventDefault();
         $(this).parent().remove();
         if (!$(".demo .lyrow").length > 0) {
