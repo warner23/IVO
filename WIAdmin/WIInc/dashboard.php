@@ -1,6 +1,3 @@
-
-
-
  <aside class="right-side">
     <!-- Content Header (Page header) -->
         <section class="content-header">
@@ -58,8 +55,7 @@
                                         <div class="col-sm-7">
                                             <!-- bar chart -->
                                             <div class="chart" id="bar-chart" style="height: 250px;">
-                                              
-                                            </div>
+                                     </div>
                                         </div>
                                         <div class="col-sm-5">
                                             <div class="pad">
@@ -122,8 +118,8 @@
                             </div><!-- /.box -->        
                             
                             <?php
-
-                             $check = dirname(dirname(dirname(dirname(dirname(dirname(dirname(__FILE__))))))) . '/WIShop/';
+                            //echo dirname(dirname(dirname(__FILE__))) . '/WIShop';
+                             $check = dirname(dirname(dirname(__FILE__))) . '/WIShop';
 
                             if(file_exists($check)){
                             echo ' <!-- Custom tabs (Charts with tabs)-->
@@ -217,27 +213,40 @@
                                     </h3>
                                 </div>
                                 <div class="box-body no-padding">
-
+                                        
                                      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
                                     <script type="text/javascript">
                                       google.charts.load('current', {
                                         'packages':['geochart'],
                                         // Note: you will need to get a mapsApiKey for your project.
                                         // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-                                        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+                                        
+                                        'mapsApiKey': '<?php  echo google_charts_api_key; ?>'
                                       });
-                                      google.charts.setOnLoadCallback(drawRegionsMap);
+                                      google.charts.setOnLoadCallback(load_map_data);
 
-                                      function drawRegionsMap() {
-                                        var data = google.visualization.arrayToDataTable([
-                                          ['Country', 'Popularity'],
-                                          ['Germany', 200],
-                                          ['United States', 300],
-                                          ['Brazil', 400],
-                                          ['Canada', 500],
-                                          ['France', 600],
-                                          ['RU', 700]
-                                        ]);
+
+                                      function load_map_data(){
+                                        $.ajax({
+                                              url: "WICore/WIClass/WIAjax.php",
+                                              dataType: "json",
+                                              type : "GET",
+                                              async: false,
+                                              data : {
+                                                action : "mapData"
+                                              },
+                                              success : function(map_values){
+                                                console.log(map_values);
+                                                drawRegionsMap(map_values);
+                                              }
+                                              });
+                                      }
+
+
+                                      function drawRegionsMap(map_values) {
+                                       
+                                        //var data = new google.visualization.DataTable(map_values);
+                                        var data = google.visualization.arrayToDataTable(map_values);
 
                                         var options = {};
 

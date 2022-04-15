@@ -44,15 +44,10 @@ class WIContact
 
     public function Messages()
     {
-        $sql = "SELECT * FROM `wi_contact_message`";
 
-        $query = $this->WIdb->prepare($sql);
-        $query->execute();
-
-       while( $res = $query->fetchAll(PDO::FETCH_ASSOC) ){
-
-        foreach ($res as $key => $value) {
-            echo '                  <li><!-- start message -->
+        $result = $this->WIdb->select("SELECT * FROM `wi_contact_message`");
+        foreach ($result as $key => $value) {
+            echo '<li><!-- start message -->
                     <a href="#">
                       <h4>
                         ' . $value['name'] . '
@@ -62,7 +57,6 @@ class WIContact
                     </a>
                   </li>';
         }
-    }
     }
  }
     

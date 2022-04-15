@@ -1,119 +1,173 @@
 $(document).ready(function(event)
 {
 
+   $(".ed").click(function(){
+    //alert('clicked');
+    var id = $(".site").attr('id');
+    var edit = $("#edit-"+id).attr('value');
 
-        // button register click below
-    $("#perm_btn").click(function()
+    if(edit === "0")
     {
+        $("#edit-"+id).attr('value','1');
+    }else{
+        $("#edit-"+id).attr('value','0');
+    }
+    var ed = "edit";  
+    edit = $("#edit-"+id).attr('value');  
 
-                var edit = $("#edit").val(),
-                create  =$("#create").val(),
-                del = $("#del").val(),
-                view = $("#view").val(),
-                id  = $(".user_role_id").attr('id')
+         $.ajax({
+        url: "WICore/WIClass/WIAjax.php",
+        type: "POST",
+        data: {
+            action : "site_perm",
+            ed     : ed,
+            id     : id,
+            edit   : edit
+        },
+        success: function(result)
+        {
+            var res = JSON.parse(result);
+            if( res.status === 'completed' ){
 
+                if (edit === "1"){
+                $("#edit_site_"+id).prop("checked", true);
+                $("#ed-"+id).text('ON');
+               }else if (edit === "0"){
+                $("#edit_site_"+id).removeAttr('checked');
+                $("#ed-"+id).text('OFF');
+                $("#ed-"+id).css('padding-left', '50%');
+               }
+           }
+        }
 
-             //create data that will be sent over server
-
-             var perm = {
-                UserData:{
-                    edit           : edit,
-                    create         : create,
-                    del            : del,
-                    view            : view,
-                    id            : id
-
-                },
-                FieldId:{
-                    edit           : "edit_Site",
-                    create         : "create_site",
-                    del            : "delete_site",
-                    view            : "view_site",
-                    id            : "user_role_id"
-
-                }
-             };
-             // send data to server
-             WIPermissions.save(perm);
-        
     });
+});
+
+
+$(".cr").click(function(){
+    //alert('clicked');
+    var id = $(".site").attr('id');
+    var create = $("#create-"+id).attr('value');
+    if(create === "0")
+    {
+        $("#create-"+id).attr('value','1');
+    }else{
+        $("#create-"+id).attr('value','0');
+    }
+    var ed = "create"; 
+    create = $("#create-"+id).attr('value');    
+
+         $.ajax({
+        url: "WICore/WIClass/WIAjax.php",
+        type: "POST",
+        data: {
+            action : "site_perm",
+            ed     : ed,
+            id     : id,
+            edit   : create
+        },
+        success: function(result)
+        {
+            if (create === "1"){
+            $("#create_site_"+id).prop("checked", true);
+            $("#cr-"+id).text('ON');
+           }else if (create === "0"){
+            $("#create_site_"+id).removeAttr('checked');
+            $("#cr-"+id).text('OFF');
+            $("#cr-"+id).css('padding-left', '50%');
+           }
+        }
+
+    });
+});
+
+$(".de").click(function(){
+    //alert('clicked');
+
+    var id = $(".site").attr('id');
+    var del = $("#del-"+id).attr('value');
+    if(del === "0")
+    {
+        $("#del-"+id).attr('value','1');
+    }else{
+        $("#del-"+id).attr('value','0');
+    }
+    var ed = "delete"; 
+    var del = $("#del-"+id).attr('value');
+
+    $.ajax({
+        url: "WICore/WIClass/WIAjax.php",
+        type: "POST",
+        data: {
+            action : "site_perm",
+            ed     : ed,
+            id     : id,
+            edit   : del
+        },
+        success: function(result)
+        {
+            var res = JSON.parse(result);
+            if( res.status === 'completed' ){
+
+            if (del === "1"){
+            $("#delete_site_"+id).prop("checked", true);
+            $("#de-"+id).text('ON');            
+           }else if (del === "0"){
+            $("#delete_site_"+id).removeAttr('checked');
+            $("#de-"+id).text('OFF');
+            $("#de-"+id).css('padding-left', '50%');
+           }
+            }
+        }
+    });
+});
+
+$(".vi").click(function(){
+    
+        var id = $(".site").attr('id');
+    var view = $("#view-"+id).attr('value');
+    if(view === "0")
+    {
+        $("#view-"+id).attr('value','1');
+    }else{
+        $("#view-"+id).attr('value','0');
+    }
+    var ed = "view"; 
+    var view = $("#view-"+id).attr('value');
+
+    $.ajax({
+        url: "WICore/WIClass/WIAjax.php",
+        type: "POST",
+        data: {
+            action : "site_perm",
+            ed     : ed,
+            id     : id,
+            edit   : view
+        },
+        success: function(result)
+        {
+            var res = JSON.parse(result);
+            if( res.status === 'completed' ){
+            if (view === "1"){
+            $("#view_site_"+id).prop("checked", true);
+            $("#vi-"+id).text('ON');            
+           }else if (view === "0"){
+            $("#view_site_"+id).removeAttr('checked');
+            $("#vi-"+id).text('OFF');
+            $("#vi-"+id).css('padding-left', '50%');
+           }
+            }
+        }
+    }); 
    
+});
 
-                       $("#ed").click(function(){
-                        //alert('clicked');
-                        var edit = $("#edit").attr('value');
-                        console.log(edit);
-                        if (edit === "0"){
-                        $("#edit_site").prop("checked", true);
-                        $("#ed").text('ON');
-                        $("#edit").attr('value','1');
-                       }else if (edit === "1"){
-                        $("#edit_site").removeAttr('checked');
-                        $("#edit").attr('value','0');
-                        $("#ed").text('OFF');
-                        $("#ed").css('padding-left', '50%');
-                       }
-                    });
-
-
-                    $("#cr").click(function(){
-                        //alert('clicked');
-                        var create = $("#create").attr('value');
-                        console.log(create);
-                        if (create === "1"){
-                        $("#create_site").prop("checked", true);
-                        $("#create").attr('checked');
-                        $("#cr").text('ON');
-                        $("#create").attr('value','0');
-                        
-                       }else if (create === "0"){
-                        $("#create_site").removeAttr('checked');
-                        $("#cr").text('OFF');
-                        $("#cr").css('padding-left', '50%');
-                        $("#create").attr('value','1');
-                       }
-                    });
-
-                    $("#de").click(function(){
-                        //alert('clicked');
-                        var del = $("#del").attr('value');
-                        console.log(del);
-                        if (del === "1"){
-                        $("#delete_site").prop("checked", true);
-                        $("#de").text('ON');
-                        $("#del").attr('value','0');
-                        
-                       }else if (del === "0"){
-                        $("#delete_site").removeAttr('checked');
-                        $("#de").text('OFF');
-                        $("#de").css('padding-left', '50%');
-                        $("#delete").attr('value','1');
-                       }
-                    });
-
-                    $("#vi").click(function(){
-                        //alert('clicked');
-                        var view = $("#view").attr('value');
-                        console.log(view);
-                        if (view === "0"){
-                        $("#view_site").prop("checked", true);
-                        $("#vi").text('ON');
-                        $("#view").attr('value','1');
-                        
-                       }else if (view === "1"){
-                        $("#view_site").removeAttr('checked');
-                        $("#vi").text('OFF');
-                        $("#vi").css('padding-left', '50%');
-                        $("#view").attr('value','0');
-                       }
-                    }); 
-   
 });
 
 
 var WIPermissions = {}
 
-WIPermissions.save = function(perm){
+WIPermissions.save = function(perm, id){
     event.preventDefault();
     //alert('clicked');
     var btn = $("#perm_btn");
@@ -193,11 +247,7 @@ WIPermissions.Open = function(id, name){
     //var Div = '<div id="div">Are you sure you want to delete '+name+' page </div>';
     var Div = '<div id="div"><span>Are you sure you want to delete '+name+' page </span> <button class="btn btn-danger" onclick="WIPages.Delete(`'+id+'`, `'+name+'`);">Delete</button> <button class="btn" onclick="WIPages.Close();">Cancel</button></div>';
 
-
     Element.append(Div);
-
-
-
 }
 
 WIPermissions.Close = function(){
@@ -205,6 +255,5 @@ WIPermissions.Close = function(){
     $("#modal-delete").removeClass("show");
     $("#modal-delete").addClass("hide");
     $("#div").remove();
-
 }
 

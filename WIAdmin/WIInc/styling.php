@@ -1,15 +1,4 @@
- <style type="text/css">
-   .off{
-    display: none;
-   }
-
-   .on{
-    display: block;
-   }
- </style>
-
-
-  <script>
+<script>
 
       $(function() {
     //  jQueryUI 1.10 and HTML5 ready
@@ -48,18 +37,7 @@
 
     
     });
-/*  $( function() {
-    $( "#tabs3" ).tabs({
-        // The zero-based index of the panel that is active (open)
-        active : oldIndex,
-        // Triggered after a tab has been activated
-        activate : function( event, ui ){
-            //  Get future value
-            var newIndex = ui.newTab.parent().children().index(ui.newTab);
-            //  Set future value
-            dataStore.setItem( index, newIndex ) 
-        });
-  } );*/
+
   </script>
  <aside class="right-side">
                 <!-- Content Header (Page header) -->
@@ -91,6 +69,7 @@
     <li><a href="#tabs-1">Theme</a></li>
     <li><a href="#tabs-2">CSS</a></li>
     <li><a href="#tabs-3">JS</a></li>
+
   </ul>
   <div id="tabs-1">
  <?php include_once 'WIInc/site/Styling/theme.php'; ?> 
@@ -101,6 +80,7 @@
   <div id="tabs-3">
 <?php include_once 'WIInc/site/Styling/js.php'; ?> 
   </div>
+
 </div>
 
                      </div>
@@ -117,6 +97,6 @@
 
    <?php  
 
- $modal->moduleModal('theme', 'Add new theme', 'WITheme', 'theme','create theme'); 
+ $modal->moduleModal('theme', 'Add new theme', 'WITheme', 'theme','create theme',''); 
 
    ?>

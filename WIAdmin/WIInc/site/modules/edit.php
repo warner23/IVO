@@ -210,6 +210,13 @@ width: 100%;
         color: white;
 }
 
+.elementsM{
+    font-size: 13px;
+    text-align: -webkit-center;
+    margin: 8px 0px 0px 0px;
+        color: white;
+}
+
 .offsetleft10{
       margin-left: -182px;
 }
@@ -254,8 +261,8 @@ width: 100%;
           </li>
 
           <li>
-            <div class="controls col-lg-9">
-          <input type="text" name="mod_name" id="mod_name" placeholder="Module Name" class="input-xlarge form-control"  autofocus>
+            <div class="col-lg-9">
+          <input type="text" name="edit_mod_name" id="edit_mod_name" placeholder="Module Name" class="input-xlarge form-control"  autofocus>
           </div>
           </li>
         </ul>
@@ -265,7 +272,7 @@ width: 100%;
               <button class="btn btn-default navbar-btn" href="#clear" id="clear" color="#333;">
                 <i class="fa icon-trash" style="color: #333;"></i>Clear
               </button>
-              <button type="button" class="btn btn-primary navbar-btn" data-target="#downloadModal" id="downloadModal" rel="/build/downloadModal" role="button" data-toggle="modal">
+              <button type="button" class="btn btn-primary navbar-btn" data-target="#editdownloadModal" id="editdownloadModal" rel="/build/downloadModal" role="button" data-toggle="modal">
                 <i class="fa icon-chevron-down" ></i>Save
               </button>
             </div>
@@ -302,8 +309,8 @@ width: 100%;
 </div>
 
 
- <div class="demo ui-sortable" style="min-height: 304px; ">
-            <div class="lyrow">
+ <div class="edit_WI ui-sortable" style="min-height: 304px; ">
+            <div class="edit_wicreate">
               <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>remove</a>
               <span class="drag label"><i class="icon-move"></i>drag</span>
               <div class="preview">9 3</div>
@@ -340,14 +347,14 @@ width: 100%;
         <!--/row-->
       </div>
       <!--/.fluid-container-->
-      <div class="modal hide fade" role="dialog" id="editorModal">
+      <div class="modal hide fade" role="dialog" id="editeditorModal">
         <div class="modal-header">
           <a class="close" data-dismiss="modal">×</a>
           <h3>Save your Layout</h3>
         </div>
         <div class="modal-body">
           <p>
-            <textarea id="contenteditor"></textarea>
+            <textarea id="editcontenteditor"></textarea>
           </p>
         </div>
         <div class="modal-footer"> <a id="savecontent" class="btn btn-primary" data-dismiss="modal">Save</a> <a class="btn" data-dismiss="modal">Cancel</a> </div>
@@ -356,35 +363,10 @@ width: 100%;
 
          <?php  
 
- $modal->moduleModal('downloadingModal', 'Save', 'WIScript', 'saveHtml','Save'); 
+ $modal->moduleModal('editdownloadingModal', 'Save', 'WIScript', 'saveHtml','Save',''); 
 
    ?>
-<!--       <div class="modal hide fade" role="dialog" id="downloadingModal">
-        <div class="modal-header">
-          <a class="close" data-dismiss="modal">×</a>
-          <h3>Save</h3>
-        </div>
-        <div class="modal-body">
-          <p>Choose how to save your layout</p>
-          <div class="btn-group">
-            <button type="button" id="fluidPage" class="active btn btn-info"><i class="icon-fullscreen icon-white"></i> Fluid Page</button>
-            <button type="button" class="btn btn-info" id="fixedPage"><i class="icon-screenshot icon-white"></i> Fixed page</button>
-          </div>
-          <br>
-          <br>
-          <p>
-            <textarea></textarea>
-          </p>
-          <input type="text" name="mod_name" id="mod_name" placeholder="Module Name">
-        </div>
-        <div class="modal-footer"> <a class="btn btn-primary navbar-btn" data-dismiss="modal" onclick="javascript:WIScript.saveHtml();">Save</a> </div>
-      </div>
-    </div> -->
-  
-<!--  <script type="text/javascript" src="WIInc/js/jquery-2.0.0.min.js"></script> -->
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <![endif]-->
+
     <script>
       function resizeCanvas(size)
       {

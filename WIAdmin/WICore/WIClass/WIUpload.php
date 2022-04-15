@@ -2,9 +2,15 @@
 
 class WIUpload
 {
+
+     public function __construct()
+    {
+        $this->WIdb = WIdb::getInstance();
+    }
+
+
 	public function uploadFile($data)
 	{
-
 		 $Destination = 'WIMedia/Img/header/';
     if(!isset($_FILES['ImageFile']) || !is_uploaded_file($_FILES['ImageFile']['tmp_name']))
     {
@@ -32,6 +38,7 @@ class WIUpload
     $stmt->bindParam(':header', $NewImageName, PDO::PARAM_STR);
     $stmt->bindParam(':id', $id, PDO::PARAM_INT);
     $stmt->execute();
+
 
 
 	}

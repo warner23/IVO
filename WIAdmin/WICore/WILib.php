@@ -19,6 +19,7 @@ $dbtype          = $config->Website_Info("db_type");
 $webName               = $config->Website_Info("site_name");
 $domain                = $config->Website_Info("site_domain");
 $script                = $config->Website_Info("site_url");
+$contact_email         = $config->Website_Info("contact_email");
 
 $session               = $config->Website_Info("secure_session");
 $http                  = $config->Website_Info("http_only");
@@ -48,7 +49,9 @@ $social                = $config->Website_Info("social_callback_url");
 $google                = $config->Website_Info("google_enabled");
 $google_id             = $config->Website_Info("google_id");
 $google_secret         = $config->Website_Info("google_secret");
-$google_map_api         = $config->Website_Info("google_map_api");
+$google_map_api        = $config->Website_Info("google_map_api");
+$google_charts_api_key = $config->Website_Info("google_charts_api_key");
+
 $fb                    = $config->Website_Info("facebook_enabled");
 $fb_id                 = $config->Website_Info("facebook_id");
 $fb_secret             = $config->Website_Info("facebook_secret");

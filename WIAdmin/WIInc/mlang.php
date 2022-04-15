@@ -1,14 +1,4 @@
- <style type="text/css">
-   .off{
-    display: none;
-   }
-
-   .on{
-    display: block;
-   }
- </style>
-
- <script>
+<script>
   $( function() {
 
 var index = 'key';
@@ -75,14 +65,17 @@ var index = 'key';
 <?php include_once 'WIInc/site/lang/add.php'; ?> 
   </div>
 </div>
-                     </div>
-                     </div>
-                     </div>
-                     </div>
+   </div>
+   </div>
+   </div>
+   </div>
 
-                     </section>
+   </section>
 <script type="text/javascript" src="WICore/WIJ/WICore.js"></script>
     <script type="text/javascript" src="WICore/WIJ/WILang.js"></script>
+
+    <script type="text/javascript" src="WICore/WIJ/WIMediaCenter.js"></script>
+
 
 
    

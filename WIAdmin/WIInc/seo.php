@@ -1,15 +1,4 @@
- <style type="text/css">
-   .off{
-    display: none;
-   }
-
-   .on{
-    display: block;
-   }
- </style>
-
-
-  <script>
+<script>
   $( function() {
 
     var index = 'key';
@@ -70,7 +59,7 @@ SEO
 
   </ul>
   <div id="tabs-1">
- <?php include_once 'WIInc/site/Styling/meta.php'; ?> 
+ <?php include_once 'WIInc/site/seo/meta.php'; ?> 
   </div>
 
 </div>

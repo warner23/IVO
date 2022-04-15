@@ -39,8 +39,6 @@ $(document).ready(function(event)
     WIEditpage.loadPage(page);
     WIEditpage.loadOptions(page);
 
-
-
 });
 
 
@@ -75,6 +73,40 @@ WIEditpage.NextMod = function(){
     });
 }
 
+WIEditpage.assignMod = function(){
+            $("#modal-assign-details").removeClass('hide fade');
+            $("#modal-assign-details").addClass('show');
+}
+
+
+WIEditpage.assign = function(mod){
+
+        var page = $("#page-title").val();
+         $.ajax({
+        url: "WICore/WIClass/WIAjax.php",
+        type: "POST",
+        data: {
+            action : "assign",
+            mod   : mod,
+            page  : page
+        },
+        success: function(result)
+        {
+            console.log(result);
+            $("#mod-assigned").val(mod);
+            $("#modal-assign-details").removeClass('show');
+            $("#modal-assign-details").addClass('hide fade');
+            WIEditpage.loadPage(page);
+        }
+
+        });
+    
+}
+
+WIEditpage.closed = function(id){
+    $("#modal-"+id+"-details").removeClass("show")
+    $("#modal-"+id+"-details").addClass("hide fade")
+ }
 
 WIEditpage.loadPage = function(page){
 
@@ -95,6 +127,7 @@ WIEditpage.loadPage = function(page){
         
     });
 }
+
 
 WIEditpage.loadOptions = function(page){
 
@@ -122,6 +155,12 @@ WIEditpage.loadOptions = function(page){
                      $("#rsc").prop("checked", true);                   
                 }else{
                     $("#rsc").prop("unchecked");
+                }
+
+                if(res.content.length > 0){
+                    $("#mod-assigned").val(res.content);
+                }else{
+                    $("#mod-assigned").val("No Module Assigned");
                 }
                 
             }
@@ -198,9 +237,7 @@ WIEditpage.lsc = function(page){
                 }else{
                     $("#lsc").attr("checked");
                 }
-        }
-       
-        
+        }   
     }
 } );
 }
@@ -271,13 +308,8 @@ var page = $("#page-title").val();
                     $("#block").before(Div);
                     $("#sidenavL").load("WIInc/edit/WIInc/left_sidebar.php");
 
-
-
-
                 }
         }
-       
-        
     }
 } );
 }
@@ -320,18 +352,8 @@ var page = $("#page-title").val();
                     '</div>';
                     $("#col").append(Div);
                     $("#sidenavR").load("WIInc/edit/WIInc/right_sidebar.php");
-
-
-
-
                 }
         }
-       
-        
     }
 } );
-}
-
-WIEditpage.edit = function(){
-    
 }

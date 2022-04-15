@@ -41,7 +41,7 @@ body {
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.7); 
 }
 
-.edit .demo {
+.edit .WI {
   margin-left: 0px;
   margin-top: 10px;
   padding: 30px 15px 15px;
@@ -50,7 +50,8 @@ body {
   word-wrap: break-word; 
 }
 
-.edit .demo:after {
+
+.edit .WI:after {
   background-color: #F5F5F5;
   border: 1px solid #DDDDDD;
   border-radius: 4px 0 4px 0;
@@ -135,6 +136,13 @@ body {
   height: 25px; 
 }
 
+.sidebar-nav .grid {
+    line-height: 25px;
+    width: 170px;
+    height: 25px;
+    margin-top: 10px;
+}
+
 .sidebar-nav .preview {
 display: block;
     color: #fffcfc;
@@ -158,11 +166,11 @@ display: block;
   display: none; 
 }
 
-.demo .preview {
+.WI .preview {
   display: none; 
 }
 
-.demo .box .view {
+.WI .box .view {
   display: block;
   padding-top: 30px; 
 }
@@ -171,7 +179,7 @@ display: block;
   display: block; 
 }
 
-/*.demo .ui-sortable-placeholder { outline: 5px dotted #ddd; visibility: visible; border-radius: 4px; }*/
+/*.WI .ui-sortable-placeholder { outline: 5px dotted #ddd; visibility: visible; border-radius: 4px; }*/
 .ui-sortable-placeholder {
   outline: 1px dashed #ddd;
   visibility: visible;
@@ -185,36 +193,47 @@ display: block;
   cursor: pointer; 
 }
 
-.box, .lyrow {
+
+
+.box, .wicreate {
   position: relative; 
 }
 
-.edit .demo .lyrow .drag {
-  top: 1%;
-  right: 6%;
-  z-index: 10; 
+.edit .WI .wicreate .drag {
+    right: 64%;
+    z-index: 10;
+    float: right;
+    margin-top: 0.5%;
 }
 
-.edit .demo .column .box .drag {
+
+.edit .WI .column .box .drag {
   top: 5px; 
 }
 
-.edit .demo .column .box .configuration {
-  position: absolute;
-  top: 3px;
-  right: 140px;
-  white-space: nowrap; 
+.edit .WI .column .box .configuration {
+    position: absolute;
+    top: 3px;
+    right: 300px;
+    white-space: nowrap;
 }
 
-.edit .demo .remove {
-  position: absolute;
-  top: 1%;
-  right: 5%;
-  z-index: 10;
-  color: #fff; 
+.optset{
+margin: -17px 3px 14px -1px;
+    height: 0px;
+    width: 70%;
+    float: right; 
 }
 
-.demo .configuration {
+.edit .WI .remove {
+z-index: 10;
+    color: #fff;
+    float: right;
+    margin: 3% 0% 0% -33%;
+    width: 17%;
+}
+
+.WI .configuration {
   filter: alpha(opacity=0);
   opacity: 0;
   -webkit-transition: all 500ms ease;
@@ -224,27 +243,31 @@ display: block;
   transition: all 500ms ease; 
 }
 
-.demo .drag, .demo .remove {
+
+.WI .drag, .WI .remove {
   filter: alpha(opacity=20);
-  opacity: 0.2;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease; 
+    opacity: 0.2;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    margin-left: -274px;
+    width: 27%;
 }
 
-.demo .lyrow:hover > .drag,
-.demo .lyrow:hover > .configuration,
-.demo .lyrow:hover > .remove,
-.demo .box:hover .drag,
-.demo .box:hover .configuration,
-.demo .box:hover .remove {
+
+.WI .wicreate:hover > .drag,
+.WI .wicreate:hover > .configuration,
+.WI .wicreate:hover > .remove,
+.WI .box:hover .drag,
+.WI .box:hover .configuration,
+.WI .box:hover .remove {
   filter: alpha(opacity=100);
   opacity: 1; 
 }
 
-.edit .demo .row-fluid:before {
+.edit .WI .row-fluid:before {
   background-color: #F5F5F5;
   border: 1px solid #DDDDDD;
   border-radius: 4px 0 4px 0;
@@ -259,7 +282,8 @@ display: block;
   top: -1px; 
 }
 
-.demo .row-fluid {
+
+.WI .row-fluid {
   background-color: #F5F5F5;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -314,7 +338,7 @@ body.devpreview {
   display: none; 
 }
 
-.sourcepreview .column, .sourcepreview .row-fluid, .sourcepreview .demo .box {
+.sourcepreview .column, .sourcepreview .row-fluid, .sourcepreview .WI .box {
   margin: 0px 0;
   padding: 0px;
   background: none;
@@ -324,12 +348,12 @@ body.devpreview {
   box-shadow: inset 0 0px 0px transparent; 
 }
 
-.devpreview .demo .box, .devpreview .demo .row-fluid {
+.devpreview .WI .box, .devpreview .WI .row-fluid {
   padding-top: 0;
   background: none; 
 }
 
-.devpreview .demo .column {
+.devpreview .WI .column {
   padding-top: 19px;
   padding-bottom: 19px; 
 }
@@ -348,8 +372,6 @@ body.devpreview {
   box-sizing: border-box; 
 }
 
-#editorModal {
-  width: 640px; }
 
 a.language-selected {
   font-style: italic;
@@ -357,14 +379,15 @@ a.language-selected {
 }
 
 .toolbox-reset {
-  background: inherit;
-  color: inherit;
-  display: inherit;
-  line-height: inherit;
-  margin: inherit;
-  padding: inherit;
-  -webkit-text-size-adjust: inherit;
-  -ms-text-size-adjust: inherit; }
+background: inherit;
+    color: inherit;
+    display: inherit;
+    line-height: inherit;
+    /* margin: inherit; */
+    /* padding: inherit; */
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+}
   .toolbox-reset .collapse {
     display: block; }
   .toolbox-reset .modal {
@@ -380,25 +403,26 @@ a.language-selected {
  * Stuff we've deleted that comes from the bootstrap-combined.css file
  */
 .toolbox-reset .modal {
-  position: fixed;
-  top: 10%;
-  left: 50%;
-  z-index: 1050;
-  width: 560px;
-  margin-left: -280px;
-  background-color: #ffffff;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  outline: none; 
+position: fixed;
+    top: 9%;
+    left: 50%;
+    z-index: 1050;
+    width: 55%;
+    margin-left: -280px;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: none;
+    bottom: 184px;
 }
 
 .toolbox-reset .modal.fade {

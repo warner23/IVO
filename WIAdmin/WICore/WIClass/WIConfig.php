@@ -15,7 +15,7 @@ define('WEBSITE_NAME', $webName);
 
 define('WEBSITE_DOMAIN', $domain);
 
-
+define('CONTACT_EMAIL', $contact_email);
 //it can be the same as domain (if script is placed on website's root folder) 
 //or it can cotain path that include subfolders, if script is located in some subfolder and not in root folder
 define('SCRIPT_URL', $script);
@@ -93,7 +93,6 @@ define('SMTP_ENCRYPTION', $smpt_encryption);
 
 define('SOCIAL_CALLBACK_URI', $social); 
 
-
 // GOOGLE
 
 define('GOOGLE_ENABLED', $google); 
@@ -104,7 +103,7 @@ define('GOOGLE_SECRET', $google_secret);
 
 define('GOOGLE_MAP_API', $google_map_api); 
 
-
+define('GOOGLE_CHARTS_API_KEY', $google_charts_api_key); 
 // FACEBOOK
 
 define('FACEBOOK_ENABLED', $fb); 
@@ -133,3 +132,4 @@ define('DEFAULT_LANGUAGE', $default_lang);
 // VERSION 
 define('WICMS_VERSION', $version);
 
+define("INCLUDE_CHECK", true);

@@ -27,8 +27,7 @@
 
     
     });
-  </script>
-  <link href="WIInc/css/toolbox.css" rel="stylesheet">
+  </script> <link href="WIInc/css/toolbox.css" rel="stylesheet">
     <link href="WIInc/css/editor.css" rel="stylesheet">
     <link href="WIInc/css/docs.min.css" rel="stylesheet">
  <aside class="right-side">
@@ -145,7 +144,6 @@ position: absolute;
     <li><a href="#tabs-4">Available Modules</a></li>
     <li><a href="#tabs-5">Settings</a></li>
     <li><a href="#tabs-6">Edit Modules</a></li>
-    <li><a href="#tabs-7">Modules Shop</a></li>
   </ul>
     <div id="tabs-1">
 <?php include_once 'WIInc/site/modules/install_elements.php';?>
@@ -166,10 +164,6 @@ position: absolute;
     <div id="tabs-6">
 <?php include_once 'WIInc/site/modules/edit_modules.php';?>
   </div>
-
-    <div id="tabs-7">
- <?php include_once 'WIInc/site/modules/modules_store.php';?>
-  </div>
 </div> 
 
 </div>
@@ -184,20 +178,23 @@ position: absolute;
 </div><!-- end content-->
  </section>
  <script type="text/javascript" src="WICore/WIJ/WICore.js"></script>
+ <script type="text/javascript" src="WICore/WIJ/WIMedia.js"></script>
+<script type="text/javascript" src="WICore/WIJ/WIMediaCenter.js"></script>
  <script type="text/javascript" src="WICore/WIJ/WIMod.js"></script>
  <script type="text/javascript" src="WICore/WIJ/WIImage.js"></script>
  <script type="text/javascript" src="WICore/WIJ/WIPageBuilder.js"></script>
     <script type="text/javascript" src="WIInc/js/jquery.ui.touch-punch.min.js"></script>
     <script type="text/javascript" src="WIInc/js/jquery.htmlClean.js"></script>
-    <script type="text/javascript" src="WIInc/ckeditor/ckeditor.js"></script>
-    <script type="text/javascript" src="WIInc/ckeditor/config.js"></script> 
+<!--     <script type="text/javascript" src="WIInc/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="WIInc/ckeditor/config.js"></script>  -->
     <script type="text/javascript" src="WICore/WIJ/WIScripts.js"></script>
     <script type="text/javascript" src="WIInc/js/FileSaver.js"></script>
     <script type="text/javascript" src="WIInc/js/blob.js"></script>
+    <script type="text/javascript" src="WICore/WIJ/wysiwyg.js"></script>
 
                <?php  
 
- $modal->moduleModal('element_enable', 'Element Enabler', 'WIMod', 'enabler','Enable all elements'); 
+ $modal->moduleModal('element_enable', 'Element Enabler', 'WIMod', 'enabler','Enable all elements',''); 
 
    ?>
     <!--<script src="WIInc/js/docs.min.js"></script>

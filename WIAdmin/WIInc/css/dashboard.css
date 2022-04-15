@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 /* Simple fluid media
    Note: Fluid media requires that you remove the media's height and width attributes from the HTML
@@ -225,7 +226,7 @@ calendar styling
     body{ font-family: sans-serif;}
 .none{ display:none;}
 .dropdown{color: #444444;font-size:17px;}
-#calender_section{ width:700px; margin:30px auto 0;}
+#calender_section{ width:100%; margin:30px auto 0;}
 #calender_section h2{ background-color:#efefef; color:#444444; font-size:17px; text-align:center; line-height:40px;}
 #calender_section h2 a{ color:#F58220; float:none;}
 #calender_section_top{ width:100%; float:left; margin-top:20px;}
@@ -415,6 +416,11 @@ a:hover {color: #181919;text-decoration: underline;}
     width: 20%;
     top: 0;
 }
+
+.ings{
+      width: 16%;
+    float: left;
+}
 /* Header */
 body > .header {
   position: absolute;
@@ -440,6 +446,15 @@ body > .header {
     position: absolute;
     width: 20%;
     top: 142px;
+}
+
+.form-group{
+  width: 95%;
+    margin-left: 5%;
+}
+
+#legend{
+  background-color: aliceblue;
 }
 
 .users-wrapper
@@ -480,6 +495,29 @@ padding:10px 10px 10 10px;
 margin-bottom:10px;
 font-size:200%;
 }
+
+#mediadragandrophandler
+{
+border:2px dotted #0B85A1;
+width:400px;
+color:#92AAB0;
+text-align:left;vertical-align:middle;
+padding:10px 10px 10 10px;
+margin-bottom:10px;
+font-size:200%;
+}
+
+#ModDragandDropHandler
+{
+border:2px dotted #0B85A1;
+width:400px;
+color:#92AAB0;
+text-align:left;vertical-align:middle;
+padding:10px 10px 10 10px;
+margin-bottom:10px;
+font-size:200%;
+}
+
 .progressBar {
     width: 200px;
     height: 22px;
@@ -790,7 +828,12 @@ img {
 
   fieldset {
 
-    margin-top: 5%;
+    margin-top: 0%;
+}
+.group{
+      width: 60%;
+    height: 50px;
+    margin-left: 300px;
 }
 
   .sectionwrapper{
@@ -923,6 +966,19 @@ table.text-center th {
 .perm{
   margin-left: 35%;
 }
+
+.category{
+   width: 50%;
+    float: left;
+}
+
+.editcategory{
+      width: 25%;
+    float: left;
+}
+
+
+
 /*
     Components: navbar, logo and content header
 -------------------------------------------------
@@ -1049,8 +1105,7 @@ body > .header .logo .icon {
 
 
 #world-map{
-  background-image: url("../../WIMedia/Img/world_map.jpg");
-      background-size: cover;
+
 }
 @media screen and (max-width: 767px) {
   .right-side > .content-header > .breadcrumb {
@@ -1768,6 +1823,10 @@ body > .header .logo .icon {
 .radio {
   padding-left: 0;
 }
+
+.controls{
+  margin-top: 50px;
+}
 /* 
     Compenent: Progress bars
 --------------------------------
@@ -2359,6 +2418,14 @@ body > .header .logo .icon {
 .box > .loading-img {
   z-index: 1020;
   background: transparent url('../img/ajax-loader1.gif') 50% 50% no-repeat;
+}
+
+
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+    margin-top: -35px;
 }
 /*
 Component: timeline
@@ -4218,7 +4285,7 @@ body > .header {
 /*Give content full width on xs screens*/
 @media screen and (max-width: 992px) {
   .right-side {
-    margin-left: 28%;
+    margin-left: 21%;
   }
 }
 /*
@@ -7650,7 +7717,7 @@ body > .header {
 /*left side - contains sidebar*/
 .left-side {
   position: absolute;
-  width: 21%;
+  width: 16%;
   top: 54px;
 }
 
@@ -7665,8 +7732,8 @@ body > .header {
 
 @media screen and (min-width: 992px) {
   .left-side {
-    top: 56px;
-    width: 21%;
+   top: 56px;
+    width: 15%;
   }
   /*Right side strech mode*/
   .right-side.strech {
@@ -7690,7 +7757,7 @@ body > .header {
 
 
   .right-side {
- margin-left: 20%;
+     margin-left: 16%;
   }
 
 }
@@ -7699,7 +7766,7 @@ body > .header {
 @media screen and (min-width: 1250px) {
   .left-side {
     top: 56px;
-    width: 18%;
+    width: 14%;
   }
 /*
     By default the layout is not fixed but if you add the class .fixed to the body element

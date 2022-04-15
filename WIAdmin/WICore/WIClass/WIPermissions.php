@@ -14,12 +14,7 @@ class WIPermissions
 
     public function permissionTabs()
     {
-
-        $sql = "SELECT * FROM `wi_user_roles`";
-        $query = $this->WIdb->prepare($sql);
-        $query->execute();
-
-        $result = $query->fetchAll(PDO::FETCH_ASSOC);
+        $result = $this->WIdb->select("SELECT * FROM `wi_user_roles`");
 
         echo ' <script>
                 $( function() {
@@ -65,147 +60,179 @@ class WIPermissions
                   echo '</div>'; 
         }
         echo '</div>';
-
-
     }
 
     public function PermissionContents($id, $role)
     {
+        $result = $this->WIdb->select(
+          "SELECT * FROM `wi_user_permissions` WHERE `group` AND `role_id`=:id",
+                     array("id" => $id));
 
-      
+        echo '<div id="legend">
+                          <legend class="user_role_id" id="' . $id .'">' . $role . ' Permissions 
 
-      echo '<div class="sectionwrapper">
+                        <div class="sectionwrapper">
                         <div class="sect">edit</div>
                         <div class="sect">Create</div>
                         <div class="sect">Delete</div>
                         <div class="sect">View</div>
+                        </div></legend>
                         </div>';
-/*      $sql = "SELECT * FROM `wi_user_permissions` WHERE `group` AND `role_id`=:id";
-        $query = $this->WIdb->prepare($sql);
-        $query->bindParam(':id', $id, PDO::PARAM_INT);
-        $query->execute();
-
-        $result = $query->fetchAll(PDO::FETCH_ASSOC);*/
-
-
-        $result = $this->WIdb->select(
-                    "SELECT * FROM `wi_user_permissions`
-                     WHERE `group` AND `role_id` = :g",
-                     array(
-                       "g" => $id
-                     )
-                  );
-
-        echo ' <form  class="form-horizontal UPermission-form" id="UPermission">
-                      <fieldset>
-                        <div id="legend">
-                          <legend class="user_role_id" id="' . $result[0]['id'] .'">Permissions</legend>
-                        </div>';
-
+            echo '<form class="form-horizontal UPermission-form" id="UPermission-"'.$role.'>
+            <fieldset>';
         foreach ($result as $res ) {
-          
-
-                        
-                        echo '<div class="form-group">
-                           
+          echo ' <div>
+                      
+                        <div class="form-group">
+                        <div class="col-xs-4 col-md-4 col-lg-4">
                            <label>' . $res['perm_name'] . '</label>
+                        </div>
 
-                    <div class="btn-group perm" id="editing" data-toggle="buttons-radio">
+                    <div class="group" id="editing" data-toggle="buttons-radio">
 
-                    
+                    <input type="hidden" class="site" id="' . $res['id'] . '">
+                    <div class="col-xs-12 col-md-12 col-lg-12">
                      <label class="switch">
-                      <input type="hidden" name="view" id="view" class="btn-group-value view" value="' . $res['view'] . '"/>
-                        <input type="checkbox" id-"view_site" checked class="view_site">
-                        <span class="slider round" id="vi"></span>
+                      <input type="hidden" name="view" id="view-' . $res['id'] . '" class="btn-group-value" value="' . $res['view'] . '"/>
+                        <input type="checkbox" id-"view_site_' . $res['id'] . '" checked class="view_site">
+                        <span class="slider round vi" id="vi-' . $res['id'] . '"></span>
                       </label>
 
                       <label class="switch">
-                      <input type="hidden" name="del" id="del" class="btn-group-value" value="' . $res['delete'] . '"/>
-                        <input type="checkbox" id="delete_site" checked>
-                        <span class="slider round" id="de"></span>
+                      <input type="hidden" name="del" id="del-' . $res['id'] . '" class="btn-group-value" value="' . $res['delete'] . '"/>
+                        <input type="checkbox" id="delete_site_' . $res['id'] . '" checked>
+                        <span class="slider round de" id="de-' . $res['id'] . '"></span>
                       </label>
 
                        <label class="switch">
-                      <input type="hidden" name="create" id="create" class="btn-group-value" value="' . $res['create'] . '"/>
-                        <input type="checkbox" id="create_site" checked>
-                        <span class="slider round" id="cr"></span>
+                      <input type="hidden" name="create" id="create-' . $res['id'] . '" class="btn-group-value" value="' . $res['create'] . '"/>
+                        <input type="checkbox" id="create_site_' . $res['id'] . '" checked>
+                        <span class="slider round cr" id="cr-' . $res['id'] . '"></span>
                       </label>
 
                       <label class="switch">
-                       <input type="hidden" name="edit" id="edit" class="btn-group-value" value="' . $res['edit'] . '"/>
-                        <input type="checkbox" id="edit_site" checked>
-                        <span class="slider round" id="ed"></span>
+                       <input type="hidden" name="edit" id="edit-' . $res['id'] . '" class="btn-group-value" value="' . $res['edit'] . '"/>
+                        <input type="checkbox" id="edit_site_' . $res['id'] . '" checked>
+                        <span class="slider round ed" id="ed-' . $res['id'] . '"></span>
                       </label>
-
+                      </div>
                     </div>
-                </div>
-
-                              
-                      <div class="results" id="results"></div>
-                    </fieldset>
+                </div>  
+                    
                         <br /><br />
-                  </form>
-
-
                    <script type="text/javascript">
-                       var edit = $("#edit").attr(`value`);
+                       var edit = $("#edit-' . $res['id'] . '").attr(`value`);
                        if (edit === "0"){
-                        $("#edit_site").prop("checked", false);
-                        $("#ed").text(`OFF`);
-                        $("#ed").css(`padding-left`, `50%`);
+                        $("#edit_site_' . $res['id'] . '").prop("checked", false);
+                        $("#ed-' . $res['id'] . '").text(`OFF`);
+                        $("#ed-' . $res['id'] . '").css(`padding-left`, `50%`);
                        }else if (edit === "1"){
-                        $("#edit_site").prop("checked", true);
-                        $("#ed").text(`ON`);
+                        $("#edit_site_' . $res['id'] . '").prop("checked", true);
+                        $("#ed-' . $res['id'] . '").text(`ON`);
                        }
 
-                       var create = $("#create").attr(`value`);
+                       var create = $("#create-' . $res['id'] . '").attr(`value`);
                        console.log(create);
                        if (create === "0"){
-                        $("#create_site").prop("checked", false);
-                        $("#cr").text(`OFF`);
-                        $("#cr").css(`padding-left`, `50%`);
+                        $("#create_site_' . $res['id'] . '").prop("checked", false);
+                        $("#cr-' . $res['id'] . '").text(`OFF`);
+                        $("#cr-' . $res['id'] . '").css(`padding-left`, `50%`);
                        }else if (create === "1"){
-                        $("#create_site").prop("checked", true);
-                        $("#cr").text(`ON`);
+                        $("#create_site_' . $res['id'] . '").prop("checked", true);
+                        $("#cr-' . $res['id'] . '").text(`ON`);
                        }
 
-                       var del = $("#del").attr(`value`);
+                       var del = $("#del-' . $res['id'] . '").attr(`value`);
                        if (del === "0"){
-                        $("#delete_site").prop("checked", false);
-                        $("#de").text(`OFF`);
-                        $("#de").css(`padding-left`, `50%`);
+                        $("#delete_site_' . $res['id'] . '").prop("checked", false);
+                        $("#de-' . $res['id'] . '").text(`OFF`);
+                        $("#de-' . $res['id'] . '").css(`padding-left`, `50%`);
                        }else if (del === "1"){
-                        $("#delete_site").prop("checked", true);
-                        $("#de").text(`ON`);
+                        $("#delete_site_' . $res['id'] . '").prop("checked", true);
+                        $("#de-' . $res['id'] . '").text(`ON`);
                        }
 
-                       var view = $("#view").attr(`value`);
+                       var view = $("#view-' . $res['id'] . '").attr(`value`);
                        if (view === "0"){
-                        $("#view_site").prop("checked", false);
-                        $("#vi").text(`OFF`);
-                        $("#vi").css(`padding-left`, `50%`);
+                        $("#view_site_' . $res['id'] . '").prop("checked", false);
+                        $("#vi-' . $res['id'] . '").text(`OFF`);
+                        $("#vi-' . $res['id'] . '").css(`padding-left`, `50%`);
                        }else if (view === "1"){
-                        $("#view_site").prop("checked", true);
-                        $("#vi").text(`ON`);
+                        $("#view_site_' . $res['id'] . '").prop("checked", true);
+                        $("#vi-' . $res['id'] . '").text(`ON`);
                        }
-
-
-
                    </script>
                   ';
         }
+        echo '</fieldset>
+        </form>';
+
       
     }
 
-    public function site_perm($perm)
+    public function site_perm($ed, $id, $edit)
     {
+      //echo $edit;
+      $perm = array($ed => $edit);
 
-      $this->WIdb->update(
-                    "wi_user_permissions", 
-                    $perm, 
-                    "`id` = :id",
-                    array( "id" => $id )
-               );
+      $this->WIdb->update("wi_user_permissions", $perm,"`id` = :id",
+                    array( "id" => $id) 
+                  );
+      $result = array(
+        "status"  => "completed"
+                );
+      echo json_encode($result);
+               
+    }
+
+    public function ForumPermissionTabs()
+    {
+        $result = $this->WIdb->select("SELECT * FROM `wi_user_roles`");
+
+        echo ' <script>
+                $( function() {
+
+                  var index = "key";
+              //  Define friendly data store name
+              var dataStore = window.sessionStorage;
+              //  Start magic!
+              try {
+                  // getter: Fetch previous value
+                  var oldIndex = dataStore.getItem(index);
+              } catch(e) {
+                  // getter: Always default to first tab in error state
+                  var oldIndex = 0;
+              }
+
+                  $( "#tabs" ).tabs({
+        // The zero-based index of the panel that is active (open)
+        active : oldIndex,
+        // Triggered after a tab has been activated
+        activate : function( event, ui ){
+            //  Get future value
+            var newIndex = ui.newTab.parent().children().index(ui.newTab);
+            //  Set future value
+            dataStore.setItem( index, newIndex ) 
+        }
+    }); 
+
+    
+    });
+                </script>
+
+                <div id="tabs">
+              <ul>';
+         foreach ($result as $tab) {
+          echo  '<li><a href="#tabs-' . $tab['role_id'] . '">' . $tab['role'] . '</a></li>';
+        }
+        echo '</ul>';
+
+        foreach ($result as $tab) {
+          echo  '<div id="tabs-' . $tab['role_id'] . '">';
+                  self::PermissionContents($tab['role_id'], $tab['role']);
+                  echo '</div>'; 
+        }
+        echo '</div>';
     }
 
    
